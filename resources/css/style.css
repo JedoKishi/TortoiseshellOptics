@@ -9,6 +9,11 @@ html{
   margin: auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container{
+    max-width: 100%;
+  }
+}
 /*header*/
 header{
   background-image: url(../images/glasses-bg.png);
@@ -58,6 +63,20 @@ a{
   line-height: 1.2;
 }
 
+@media only screen and (max-width: 1024px) {
+  header{
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  .banner-text{
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-top: 4rem;
+    margin-right: 2rem;
+  }
+}
+
 /*images*/
 .services{
   display: flex;
@@ -86,6 +105,7 @@ a{
 /*info*/
 .info{
   display: flex;
+  justify-content: center;
   margin-bottom: 5rem;
 }
 .title-container{
